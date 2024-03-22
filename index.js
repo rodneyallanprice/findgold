@@ -55,6 +55,8 @@ const nextMove = (maze, x, y, lastDir) => {
 const markPath = (maze, x, y) => {
   if (maze[x][y] == " ") {
     maze[x][y] = "+";
+  } else if (maze[x][y] == "+") {
+    maze[x][y] = "#";
   }
   moves++;
 };
